@@ -1,0 +1,343 @@
+
+*{
+   padding: 0;
+   margin: 0;
+}
+
+body{
+   background: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+}
+
+.contenido {
+   text-align: justify;
+}
+
+.contenedor {
+   width: 90%;
+   max-width: 1000px;
+   margin: 40px auto;
+   display: grid;
+   grid-gap: 20px;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(4, auto);
+
+grid-template-areas: "header header header"
+                     "contenido contenido sidebar"
+                     "widget-1 widget-2 sidebar"
+                     "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+   background: rgb(255, 255, 255);
+   padding: 10px;
+   border-radius: 4px;
+   border: 1px solid black;
+}
+
+.contenedor .header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   background: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+   grid-area: header;
+   width: auto;
+   justify-content: space space-between;
+   gap: 7%;
+   text-decoration: double;
+  
+   
+ 
+}
+
+
+
+ul{
+   display: flex;
+   gap: 9%; 
+   font-size: 30px;
+   list-style-type: none;
+}
+
+.contenedor .contenido {
+   grid-area: contenido;
+}
+
+a{
+   text-decoration: none;
+   color: white;
+}
+
+
+img {
+   border-radius: 10%;
+}
+
+h3 {
+   font-size: 200%;
+}
+
+.contenedor .sidebar {
+   background: rgb(255, 255, 255);
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 100px;
+   grid-area: sidebar;
+   border: 1px solid black;
+  
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+   background: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+   height: 200px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.contenedor .widget-1 { 
+   grid-area: widget-1;
+}
+
+.contenedor .widget-2 {
+   grid-area: widget-2;
+}
+
+.contenedor .footer {
+   background: black;
+   color: white;
+   grid-area: footer;
+}
+
+.contenedorsociales {
+width: 90%;
+max-width: 1000px;
+margin: 20px auto;  
+display: grid;
+grid-gap: 20px;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(4, auto);
+
+grid-template-areas: "headersociales headersociales"
+                     "contenidosociales1 contenidosociales2"
+                     "sidebar sidebar"
+                     "correo footersociales"
+
+}
+
+.contenedorsociales > div,
+.contenedorsociales .headersociales,
+.contenedorsociales .contenidosociales1,
+.contenedorsociales .contenidosociales2,
+.contenedorsociales .sidebar,
+.contenedorsociales .footersociales {
+   padding: 10px;
+   border-radius: 4px;
+   border: 1px solid black;
+}
+
+.contenedorsociales .headersociales {
+   background: black;
+   color: white;
+   grid-area: headersociales;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: auto;
+   justify-content: space space-between;
+   gap: 5%;
+   text-decoration: double;
+  
+}
+
+.contenedorsociales .contenidosociales1 {
+   grid-area: contenidosociales1;
+}
+
+.contenedorsociales .contenidosociales2 {
+   grid-area: contenidosociales2;
+}
+
+.contenedorsociales .sidebar {
+   grid-area: sidebar;
+   text-align: center;
+}
+
+.contenedorsociales .correo {
+   background-color: black;
+   color: white;
+   grid-area: correo;
+
+}
+
+.contenedorsociales .footersociales {
+   background-color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+   grid-area: footersociales;
+}
+
+.contenedoracti {
+   width: 90%;
+   max-width: 1000px;
+   margin: 20px auto;  
+   display: grid;
+   grid-gap: 20px;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(4, auto);
+
+   grid-template-areas: "headeracti headeracti"
+                     "futbol natacion"
+                     "rugby tenis"
+                     "footeracti footeracti"
+
+}
+
+.contenedoracti > div,
+.contenedoracti .headeracti,
+.contenedoracti .futbol,
+.contenedoracti .natacion,
+.contenedoracti .rugby,
+.contenedoracti .tenis,
+.contenedoracti .footeracti {
+   padding: 10px;
+   border-radius: 4px;
+   border: 1px solid black;
+}
+
+.contenedoracti .headeracti {
+   grid-area: headeracti;
+   background: black;
+   color: white;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: auto;
+   justify-content: space space-between;
+   gap: 5%;
+   text-decoration: double;
+}
+
+.contenedoracti .futbol {
+   grid-area: futbol;
+}
+
+.contenedoracti .natacion {
+   grid-area: natacion;
+}
+
+.contenedoracti .rugby {
+   grid-area: rugby;
+}
+
+.contenedoracti .tenis {
+   grid-area: tenis;
+}
+
+.contenedoracti .footeracti {
+   grid-area: footeracti;
+   background-color: black;
+   color: white;
+}
+
+.contenedorserv {
+   width: 90%;
+   max-width: 1000px;
+   margin: 20px auto;  
+   display: grid;
+   grid-gap: 20px;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(4, auto);
+
+   grid-template-areas: "headerserv headerserv"
+                        "bufet bufet"
+                        "solarium solarium"
+                        "juegos juegos"
+                        "nuevas nuevas"
+                        "footerserv footerserv"
+
+}
+
+.contenedorserv > div,
+.contenedorserv .headerserv,
+.contenedorserv .bufet,
+.contenedorserv .solarium,
+.contenedorserv .juegos,
+.contenedorserv .nuevas,
+.contenedorserv .footerserv {
+   padding: 10px;
+   border-radius: 4px;
+   border: 1px solid black;
+}
+
+.contenedorserv .headerserv {
+   grid-area: headerserv;
+   background: black;
+   color: white;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: auto;
+   justify-content: space space-between;
+   gap: 5%;
+   text-decoration: double;
+}
+
+.contenedorserv .bufet {
+   grid-area: bufet;
+}
+
+.contenedorserv .solarium {
+   grid-area: solarium;
+}
+
+.contenedorserv .juegos {
+   grid-area: juegos;
+}
+
+.contenedorserv .nuevas {
+   grid-area: nuevas;
+}
+
+.contenedorserv .footerserv{
+   grid-area: footerserv;
+   background-color: black;
+   color: white;
+}
+
+
+@media screen and (max-width: 768px){
+   .contenedor {
+      grid-template-areas: "header header header"
+                        "contenido contenido contenido"
+                        "sidebar sidebar sidebar"
+                        "widget-1 widget-1 widget-2 "
+                        "footer footer footer";
+   }
+   ul{
+      display: flex;
+      flex-direction: column;
+   }
+   .contenedoracti {
+      grid-template-areas: "headeracti"
+                           "futbol"
+                           "natacion"
+                           "rugby"
+                           "tenis"
+                           "footeracti";
+
+   }
+}
+

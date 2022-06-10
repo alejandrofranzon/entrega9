@@ -209,7 +209,9 @@ grid-template-areas: "headersociales headersociales"
 
 .contenedorsociales .sidebar {
    grid-area: sidebar;
+   align-items: center;
    text-align: center;
+
 }
 
 .contenedorsociales .correo {
